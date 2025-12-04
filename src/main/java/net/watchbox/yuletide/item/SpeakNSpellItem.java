@@ -14,7 +14,7 @@ public class SpeakNSpellItem extends Item {
 
     @Override
     public ActionResult use(World world, PlayerEntity user, Hand hand) {
-        user.playSound(SoundEvents.BLOCK_COMPARATOR_CLICK);
+        user.playSound(SoundEvents.BLOCK_TRIPWIRE_CLICK_ON);
 
         return super.use(world, user, hand);
     }

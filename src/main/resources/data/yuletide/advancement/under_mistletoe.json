@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "yuletide:mistletoe"
+    },
+    "title": {
+      "translate": "advancements.yuletide.under_mistletoe.title"
+    },
+    "description": {
+      "translate": "advancements.yuletide.under_mistletoe.description"
+    }
+  },
+  "criteria": {
+    "under_mistletoe": {
+      "trigger": "yuletide:under_mistletoe"
+    }
+  },
+  "requirements": [
+    [
+      "under_mistletoe"
+    ]
+  ]
+}

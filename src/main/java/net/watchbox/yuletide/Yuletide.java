@@ -3,9 +3,7 @@ package net.watchbox.yuletide;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
-import net.watchbox.yuletide.init.YuletideBlocks;
-import net.watchbox.yuletide.init.YuletideItemGroups;
-import net.watchbox.yuletide.init.YuletideItems;
+import net.watchbox.yuletide.init.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +20,8 @@ public class Yuletide implements ModInitializer {
         YuletideItems.init();
         YuletideItemGroups.init();
         YuletideBlocks.init();
+        YuletideCriterions.init();
+        YuletideDataComponents.init();
 
 		if (FabricLoader.getInstance().isDevelopmentEnvironment()) LOGGER.info("Mod is initalized");
 	}

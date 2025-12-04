@@ -33,6 +33,12 @@ public interface YuletideItems {
 
     Item CANDY_CANE = create("candy_cane", FestiveEdibleItem::new, new AcornItemSettings()
             .maxCount(1)
+            .food(new FoodComponent.Builder()
+                    .alwaysEdible()
+                    .nutrition(3)
+                    .saturationModifier(1f)
+                    .build()
+            )
     );
 
     Item FESTIVE_BELLS = create("festive_bells", FestiveBellsItem::new, new AcornItemSettings()
@@ -61,6 +67,25 @@ public interface YuletideItems {
                     .build()
             )
     );
+
+    Item PRESENT = create("present", PresentItem::new, new AcornItemSettings()
+            .maxCount(1)
+    );
+
+    Item CHRISTMAS_COOKIE = create("christmas_cookie", FestiveEdibleItem::new, new AcornItemSettings()
+            .maxCount(16)
+            .food(new FoodComponent.Builder()
+                    .nutrition(4)
+                    .saturationModifier(6f)
+                    .alwaysEdible()
+                    .build())
+    );
+
+
+    Item GOLDEN_ORNAMENT = create("golden_ornament", OrnamentItem::new, new AcornItemSettings());
+    Item FRAGRANT_ORNAMENT = create("fragrant_ornament", OrnamentItem::new, new AcornItemSettings());
+    Item CRYSTALLINE_ORNAMENT = create("crystalline_ornament", OrnamentItem::new, new AcornItemSettings());
+    Item FESTIVE_ORNAMENT = create("festive_ornament", OrnamentItem::new, new AcornItemSettings());
 
 
 

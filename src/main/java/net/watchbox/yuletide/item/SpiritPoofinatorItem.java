@@ -29,6 +29,7 @@ public class SpiritPoofinatorItem extends Item {
 
             if (world instanceof ServerWorld serverWorld) {
                 serverWorld.spawnParticles(ParticleTypes.POOF, user.getX(), user.getY() + 0.5f, user.getZ(), 15, 0, 0 + 0.5f, 0, 0.04);
+                serverWorld.spawnParticles(ParticleTypes.SMOKE, user.getX(), user.getY() + 0.5f, user.getZ(), 15, 0, 0 + 0.5f, 0, 0.04);
             }
         }
 

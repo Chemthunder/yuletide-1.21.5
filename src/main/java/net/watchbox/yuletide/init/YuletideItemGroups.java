@@ -34,5 +34,6 @@ public interface YuletideItemGroups {
         i.add(YuletideBlocks.MISTLETOE);
         i.add(YuletideItems.GINGERBREAD);
         i.add(YuletideItems.GINGERBREAD_COOKIE);
+        i.add(YuletideItems.CHRISTMAS_COOKIE);
     }
 }
