@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "yuletide",
+  "version": "${version}",
+  "name": "Yuletide",
+  "description": "A dash of festive cheer for the holidays!",
+  "authors": [
+    "Chemthunder",
+    "AcoYT"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/yuletide/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.watchbox.yuletide.Yuletide"
+    ],
+    "client": [
+      "net.watchbox.yuletide.YuletideClient"
+    ],
+    "fabric-datagen": [
+      "net.watchbox.yuletide.YuletideDataGenerator"
+    ],
+    "cardinal-components": [
+      "net.watchbox.yuletide.cca.YuletideComponents"
+    ]
+  },
+  "mixins": [
+    "yuletide.mixins.json"
+  ],
+  "custom": {
+    "cardinal-components": [
+      "yuletide:poofed",
+      "yuletide:snowed"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

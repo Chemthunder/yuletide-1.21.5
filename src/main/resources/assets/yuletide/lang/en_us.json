@@ -1,0 +1,12 @@
+{
+  "itemGroup.yuletide": "Yuletide",
+  "text.error.steam_giftcard": "The code was already scratched off",
+
+  "item.yuletide.steam_giftcard": "'Unclaimed' Steam Gift Card",
+  "item.yuletide.spirit_poofinator": "Spirit Poof-I-Nator",
+  "item.yuletide.speak_n_spell": "Speak N' Spell",
+
+  "death.attack.snowball_hit": "%1$s was hit by an airborne snowball",
+  "death.attack.snowball_hit.player": "%1$s was hit by an airborne snowball by %2$s",
+  "death.attack.snowball_hit.item": "%1$s was hit by an airborne snowball by %2$s wielding %3$s"
+}
